@@ -1,0 +1,19 @@
+{
+  "name": "x402-token-preflight",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Token preflight check API sold over x402 (USDC on Base, PayAI facilitator)",
+  "scripts": {
+    "start": "node src/node-server.js",
+    "verify:check": "node test/verify-check.mjs",
+    "verify:402": "node test/verify-402.mjs"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.11",
+    "@x402/core": "^2.32.0",
+    "@x402/evm": "^2.32.0",
+    "@x402/hono": "^2.32.0",
+    "hono": "^4.13.21"
+  }
+}
